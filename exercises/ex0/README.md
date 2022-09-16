@@ -1,26 +1,16 @@
-# Level 1 Heading
+# Getting Started
 
-In this exercise, you will...
+In the following we describe how to get started with the _Incidents Management_ application, which we use throughout the session and the exercises.
 
-## Level 2 Heading
+## Open SAP Business Application Studio
 
-After completing these steps you will have....
+Open this URL for SAP Business Application Studio in the account prepared for the SAP TechEd session.
+Use the credentials provided by your instructor.
 
-1.	Click here.
-<br>![](/exercises/ex0/images/00_00_0010.png)
 
-2.	Insert this code.
-``` abap
- DATA(params) = request->get_form_fields(  ).
- READ TABLE params REFERENCE INTO DATA(param) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-```
+## Clone Project
+
 
 ## Summary
 
-Now that you have ... 
-Continue to - [Exercise 1 - Exercise 1 Description](../ex1/README.md)
+Now that you have a first version of the application running, continue to [exercise 1](../ex1/README.md).

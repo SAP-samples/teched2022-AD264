@@ -1,42 +1,30 @@
-# Exercise 2 - Exercise 2 Description
+# Exercise 2 - Build a Reusable Extension as Partner
 
-In this exercise, we will create...
+In this exercise, you wrap the extension content that you have created in a reusable extension package.  This package can then used by other customers of the same SaaS application.
 
-## Exercise 2.1 Sub Exercise 1 Description
+## Packaging
 
-After completing these steps you will have created...
-
-1. Click here.
-<br>![](/exercises/ex2/images/02_01_0010.png)
-
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello ABAP World! | ). 
+```sh
+npm pack
 ```
 
+## Publishing
 
+### Locally
 
-## Exercise 2.2 Sub Exercise 2 Description
+Move the `tgz` file to ...
 
-After completing these steps you will have...
+### Via NPM (optional)
 
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc = 0.
-    response->set_status( i_code = 200
-                     i_reason = 'Everything is fine').
-    RETURN.
-  ENDIF.
-
+```sh
+npm publish
 ```
 
-2.	Click here.
-<br>![](/exercises/ex2/images/02_02_0010.png)
+### Via Marketplace (outlook)
+
 
 ## Summary
 
-You've now ...
+You've now packaged and published your work to a place where it can be found by other customers.
 
-Continue to - [Exercise 3 - Excercise 3 ](../ex3/README.md)
+In the next [exercise 3](../ex3/README.md), you will see how such a package can be embedded again into an application.

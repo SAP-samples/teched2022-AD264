@@ -1,44 +1,44 @@
-# Exercise 1 - Exercise 1 Description
+# Exercise 1 - Build an Extension as SaaS Customer
 
-In this exercise, we will create...
+In this exercise, you will create an extension to the _Incidents Management_ Application for your customer tenant.
 
-## Exercise 1.1 Sub Exercise 1 Description
+## Run SaaS application locally
 
-After completing these steps you will have created...
+Let's simulate a running SaaS application by starting the cloned application locally.
 
-1. Click here.
-<br>![](/exercises/ex1/images/01_01_0010.png)
+> Normally, this would an already deployed and running application on SAP BTP, but for the sake of this exercise let's keep things simple.
 
-2.	Insert this line of code.
-```abap
-response->set_text( |Hello World! | ). 
+## Subscribe to the application
+
+## Copy the extension project template
+
+## Add the extension model
+
+<details open>
+<summary>See the solution</summary>
+
+https://github.tools.sap/cap/incidents-ext-solar/blob/main/app/schema.cds
+</details>
+
+## Add the UI annotations
+
+<details open>
+<summary>See the solution</summary>
+
+https://github.tools.sap/cap/incidents-ext-solar/blob/main/app/fiori.cds
+</details>
+
+## Push the extension
+
+```sh
+cds build
+cds push
 ```
 
-
-
-## Exercise 1.2 Sub Exercise 2 Description
-
-After completing these steps you will have...
-
-1.	Enter this code.
-```abap
-DATA(lt_params) = request->get_form_fields(  ).
-READ TABLE lt_params REFERENCE INTO DATA(lr_params) WITH KEY name = 'cmd'.
-  IF sy-subrc <> 0.
-    response->set_status( i_code = 400
-                     i_reason = 'Bad request').
-    RETURN.
-  ENDIF.
-
-```
-
-2.	Click here.
-<br>![](/exercises/ex1/images/01_02_0010.png)
-
+## Test it
 
 ## Summary
 
-You've now ...
+You've now built an extension that is available in one SaaS tenant.
 
-Continue to - [Exercise 2 - Exercise 2 Description](../ex2/README.md)
-
+In the next [exercise 2](../ex2/README.md), you will see how such an extension can be build and made available for other customers of the same SaaS application.
