@@ -1,0 +1,9 @@
+VALUE;LABEL;DESCR
+north;North;
+ne;North East;
+east;East;
+se;South East;
+south;South;
+sw;South West;
+west;West;
+nw;North West;

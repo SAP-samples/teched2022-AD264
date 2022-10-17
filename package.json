@@ -1,0 +1,8 @@
+{
+  "name": "@sap-teched-2022/ad264",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "base-app"
+  ]
+}
