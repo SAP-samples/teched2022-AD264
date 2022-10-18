@@ -10,11 +10,13 @@ the session and exercises guide, as well as sample content used in the session.
 |---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
 | [AD264](https://go3.events.sap.com/sapteched/hybrid/2022/reg/flow/sap/saptech2022/sapteched2022catalog/page/catalog/session/1661198449398001XLB7) | Boost Application Verticalization, Customization, and Composition |
 
-**Description** - Learn how to verticalize and customize SaaS applications using 
-intrinsic extensibility capabilities of SAP Cloud Application Programming Model. 
-Offer feature-toggled verticalizations as a SaaS provider, and see how to create 
-and share prebuilt extension packages as an SAP partner customer, which customers 
-can reuse to compose tailored solutions.
+**Description** - In this workshop you'll learn how to verticalize and 
+customize SaaS applications using intrinsic extensibility capabilities 
+of [SAP Cloud Application Programming Model](https://cap.cloud.sap). 
+We'll offer feature-toggled verticalizations as a SaaS provider, 
+see how to create and share prebuilt extension packages as SAP partners, 
+which customers can reuse to compose tailored solutions.
+
 
 
 ## Exercises
