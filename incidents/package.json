@@ -1,0 +1,17 @@
+{
+  "name": "@capire/incidents",
+  "version": "1.0.0",
+  "dependencies": {
+    "@sap/cds": "^6",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.0.4"
+  },
+  "cds": {
+    "requires": {
+      "db": "sql"
+    }
+  },
+  "private": true
+}

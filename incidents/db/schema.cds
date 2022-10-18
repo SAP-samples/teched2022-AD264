@@ -1,5 +1,5 @@
 using { cuid, managed, sap.common.CodeList } from '@sap/cds/common';
-namespace acme.incmgt;
+namespace sap.capire.incmgt;
 
 /**
  * Customers using products sold by our company.

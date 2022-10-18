@@ -1,4 +1,4 @@
-using { acme.incmgt.Incidents } from '@acme/incidents-mgmt';
+using { sap.capire.incmgt.Incidents } from '@capire/incidents';
 
 extend Incidents with {
 

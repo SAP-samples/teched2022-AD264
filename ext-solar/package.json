@@ -1,4 +1,0 @@
-{
-  "name": "incidents-mgmt-t2",
-  "extends": "@acme/incidents-mgmt"
-}

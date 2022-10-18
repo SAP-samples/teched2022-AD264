@@ -1,4 +1,4 @@
-using { IncidentsService, acme.incmgt.Incidents, cuid } from '../srv/incidents-service';
+using { IncidentsService, sap.capire.incmgt.Incidents, cuid } from '../srv/incidents-service';
 
 annotate cuid:ID with @title: 'ID';
 
@@ -118,9 +118,9 @@ aspect EnumsCodeList @cds.autoexpose @cds.odata.valuelist {
 }
 
 // Value Help for Incidents.urgency
-define entity acme.incmgt.Incidents_urgency : EnumsCodeList {}; // REVISIT: Should be Incidents.urgency but this creates confusion with Incidents:urgency
+define entity sap.capire.incmgt.Incidents_urgency : EnumsCodeList {}; // REVISIT: Should be Incidents.urgency but this creates confusion with Incidents:urgency
 extend entity Incidents with {
-  urgency_: Association to acme.incmgt.Incidents_urgency on urgency_.value = urgency; // REVISIT: we should get rid of unstable element order messages
+  urgency_: Association to sap.capire.incmgt.Incidents_urgency on urgency_.value = urgency; // REVISIT: we should get rid of unstable element order messages
   extend urgency with @Common : { // REVISIT: we should also support keyword annotate here
     Text: urgency_.label, TextArrangement : #TextOnly,
     ValueListWithFixedValues,
@@ -134,9 +134,9 @@ extend entity Incidents with {
 }
 
 // Value Help for Incidents.status
-define entity acme.incmgt.Incidents_status : EnumsCodeList {}; // REVISIT: Should be Incidents.status but this creates confusion with Incidents:status
+define entity sap.capire.incmgt.Incidents_status : EnumsCodeList {}; // REVISIT: Should be Incidents.status but this creates confusion with Incidents:status
 extend entity Incidents with {
-  status_: Association to acme.incmgt.Incidents_status on status_.value = status; // REVISIT: we should get rid of unstable element order messages
+  status_: Association to sap.capire.incmgt.Incidents_status on status_.value = status; // REVISIT: we should get rid of unstable element order messages
   extend status with @Common : { // REVISIT: we should also support keyword annotate here
     Text: status_.label, TextArrangement : #TextOnly,
     ValueListWithFixedValues,

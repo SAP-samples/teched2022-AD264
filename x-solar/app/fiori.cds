@@ -2,7 +2,7 @@
 // Extensions for Fiori UIs
 //
 
-using { IncidentsService, acme.incmgt.Incidents, EnumsCodeList } from './extensions';
+using { IncidentsService, sap.capire.incmgt.Incidents, EnumsCodeList } from './extensions';
 
 annotate IncidentsService.Incidents with @(
   UI.Facets: [ ... up to {ID:'OverviewFacet'}, {
@@ -27,9 +27,9 @@ annotate IncidentsService.Incidents with @(
 // Value Lists
 //
 
-define entity acme.incmgt.Incidents_component : EnumsCodeList {};
+define entity sap.capire.incmgt.Incidents_component : EnumsCodeList {};
 extend entity Incidents with {
-  component_: Association to acme.incmgt.Incidents_component on component_.value = component;
+  component_: Association to sap.capire.incmgt.Incidents_component on component_.value = component;
   extend component with @Common : {
     Text: component_.label, TextArrangement : #TextOnly,
     ValueListWithFixedValues,
@@ -42,9 +42,9 @@ extend entity Incidents with {
   };
 }
 
-define entity acme.incmgt.Incidents_orientation : EnumsCodeList {};
+define entity sap.capire.incmgt.Incidents_orientation : EnumsCodeList {};
 extend entity Incidents with {
-  orientation_: Association to acme.incmgt.Incidents_orientation on orientation_.value = orientation;
+  orientation_: Association to sap.capire.incmgt.Incidents_orientation on orientation_.value = orientation;
   extend orientation with @Common : {
     Text: orientation_.label, TextArrangement : #TextOnly,
     ValueListWithFixedValues,
@@ -57,9 +57,9 @@ extend entity Incidents with {
   };
 }
 
-define entity acme.incmgt.Incidents_weather : EnumsCodeList {};
+define entity sap.capire.incmgt.Incidents_weather : EnumsCodeList {};
 extend entity Incidents with {
-  weather_: Association to acme.incmgt.Incidents_weather on weather_.value = weather;
+  weather_: Association to sap.capire.incmgt.Incidents_weather on weather_.value = weather;
   extend weather with @Common : {
     Text: weather_.label, TextArrangement : #TextOnly,
     ValueListWithFixedValues,

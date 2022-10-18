@@ -6,8 +6,8 @@ the session and exercises guide, as well as sample content used in the session.
 
 ### Session Details
 
-| Session ID | Title                                                             |
-|------------|-------------------------------------------------------------------|
+| Session ID                                                                                                                                        | Title                                                             |
+|---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
 | [AD264](https://go3.events.sap.com/sapteched/hybrid/2022/reg/flow/sap/saptech2022/sapteched2022catalog/page/catalog/session/1661198449398001XLB7) | Boost Application Verticalization, Customization, and Composition |
 
 **Description** - Learn how to verticalize and customize SaaS applications using 
@@ -36,10 +36,10 @@ It contains:
 
 | Folder / File                                                                          | Description                                           |
 |----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [base-app/](https://github.com/SAP-samples/teched2022-AD264/tree/main/base-app)        | The Incidents Management SaaS application             |
-| [ext-solar/](https://github.com/SAP-samples/teched2022-AD264/tree/main/ext-solar)      | Pre-built verticalization for vendors of solar panels |
-| [ext-t1/](https://github.com/SAP-samples/teched2022-AD264/tree/main/ext-t1)            | Individual extension for SaaS customer _t1_           |
-| [wiki/](https://github.com/SAP-samples/teched2022-AD264/wiki)                          | A git submodule link to the repo's wiki content       |
+| [exercises/](https://github.com/SAP-samples/teched2022-AD264/wiki)                     | A git submodule link to the repo's wiki content       |
+| [incidents/](https://github.com/SAP-samples/teched2022-AD264/tree/main/incidents)      | The Incidents Management SaaS application             |
+| [x-solar/](https://github.com/SAP-samples/teched2022-AD264/tree/main/x-solar)          | Pre-built verticalization for vendors of solar panels |
+| [x-t1/](https://github.com/SAP-samples/teched2022-AD264/tree/main/x-t1)                | Individual extension for SaaS customer _t1_           |
 | [package.json](https://github.com/SAP-samples/teched2022-AD264/tree/main/package.json) | Npm workspace setup                                   |
 
 

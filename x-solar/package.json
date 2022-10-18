@@ -1,0 +1,4 @@
+{
+  "name": "@solar/incidents",
+  "extends": "@capire/incidents"
+}
