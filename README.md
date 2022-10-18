@@ -3,7 +3,8 @@
 Welcome to the Hand-On Session at TechEd 2022. This repository provides both, 
 the session and exercises guide, as well as sample content used in the session.
 
-### Session Details
+
+## Session Details
 
 | Session ID | Title                                                             |
 |------------|-------------------------------------------------------------------|
@@ -16,7 +17,7 @@ and share prebuilt extension packages as an SAP partner customer, which customer
 can reuse to compose tailored solutions.
 
 
-### Exercises
+## Exercises
 
 - [Introduction](https://github.com/SAP-samples/teched2022-AD264/wiki)
 - [Getting Started](https://github.com/SAP-samples/teched2022-AD264/wiki/0.-Getting-Started)
@@ -28,7 +29,7 @@ can reuse to compose tailored solutions.
 - [Summary](https://github.com/SAP-samples/teched2022-AD264/wiki/6.-Summary)
 
 
-### Content 
+## Content 
 
 This content in this repo is a so-called monorepo using npm workspaces technique. 
 It contains: 
@@ -42,13 +43,14 @@ It contains:
 | [package.json](https://github.com/SAP-samples/teched2022-AD264/tree/main/package.json) | Npm workspace setup                                   |
 
 
-### License
+## License
 
 Copyright (c) 2022 SAP SE or an SAP affiliate company. All rights reserved. 
 This project is licensed under the Apache Software License, version 2.0 except as 
 noted otherwise in the [LICENSE](LICENSE) file.
 
-### Obtaining Support
+
+## Obtaining Support
 
 Support for the content in this repository is available during the actual time of 
 the online session for which this content has been designed. Otherwise, you may 
