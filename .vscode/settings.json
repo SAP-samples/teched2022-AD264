@@ -2,5 +2,7 @@
     "files.exclude": {
         "**/.*": false,
         "**/node_modules": false
-    }
+    },
+    "window.title": "${folderName}",
+    "workbench.startupEditor": "readme"
 }

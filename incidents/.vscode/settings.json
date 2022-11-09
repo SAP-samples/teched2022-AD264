@@ -3,5 +3,6 @@
         "**/.*": true,
         "**/node_modules": true
     },
-    "window.title": "${folderName}"
+    "window.title": "${folderName}",
+    "workbench.startupEditor": "readme"
 }
