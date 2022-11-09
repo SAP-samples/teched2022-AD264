@@ -39,4 +39,3 @@ In case of intermediate updates by your SaaS provider, run this to update downlo
 ```js
 cds pull --from <your app url> 
 ```
-
