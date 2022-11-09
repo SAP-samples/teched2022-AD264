@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <title>Launchpad</title>
+</head>
+
+<body>
+
+  <h3>Incidents Management App...</h3>
+  <ul>
+    <li><a id="alice" href="/" target="_blank">as alice (t1)</a></li>
+    <li><a id="erin" href="/" target="_blank">as erin (t2)</a></li>
+    <li><a id="bob" href="/" target="_blank">as bob (t1-ext)</a></li>
+  </ul>
+
+  <script>
+    for (let a of document.querySelectorAll('li a'))
+      a.href = a.href.replace('://', '://' + a.id + '@') + '$fiori-preview/IncidentsService/Incidents#preview-app'
+  </script>
+
+</body>
+
+</html>
