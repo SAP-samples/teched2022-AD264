@@ -5,12 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "node-terminal",
       "command": "cds run --with-mocks --in-memory?",
       "name": "cds run",
       "request": "launch",
-      "type": "node-terminal",
       "skipFiles": [
-        "<node_internals>/**"
+        "<node_internals>/**",
+        "**/node_modules/**",
+        "**/cds/lib/lazy.js",
+        "**/cds/lib/req/cds-context.js",
+        "**/odata-v4/okra/**",
       ]
     }
   ]
