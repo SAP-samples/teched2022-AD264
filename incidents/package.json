@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "dependencies": {
     "@sap/cds": "^6",
+    "@sap/cds-mtxs": "^1",
     "express": "^4"
   },
   "devDependencies": {
@@ -10,7 +11,9 @@
   },
   "cds": {
     "requires": {
-      "db": "sql"
+      "db": "sql-mt",
+      "multitenancy": true,
+      "extensibility": true
     }
   },
   "private": true
