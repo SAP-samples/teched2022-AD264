@@ -5,18 +5,37 @@
   <link rel="stylesheet" href="https://unpkg.com/primitive-ui/dist/css/main.css">
 </head>
 
-<body>
+<body class="small-container", style="margin-top: 70px;">
 
-  <h3>Incidents Management App...</h3>
-  <ul>
-    <li><a id="alice" target="_blank">as alice (t1)</a></li>
-    <li><a id="erin" target="_blank">as erin (t2)</a></li>
-    <li><a id="bob" target="_blank">as bob (t1-ext)</a></li>
-  </ul>
+  <h3>Welcome to Incidents Management Sample at TechEd 2022</h3>
+
+  This is a special index.html page for the AD264 hands-on session at TechEd 2022
+  to launch Incidents Management application with different users / tenants.
+
+  <h5>Open Incidents Management as...</h5>
+
+  <button onclick="open4('alice')"> Alice (t1) </button>
+  <button onclick="open4('bob')"> Bob (t1-ext) </button>
+  <br>
+  <button onclick="open4('erin')" class="accent-button"> Erin (t2) </button>
 
   <script>
-    for (let a of document.querySelectorAll('li a'))
-      a.href = a.href.replace('://', '://' + a.id + '@') + '$fiori-preview/IncidentsService/Incidents#preview-app'
+    let recent
+    function open4 (id) {
+      let a = document.location
+      let url = a.href.replace('://', '://' + id + '@') + '$fiori-preview/IncidentsService/Incidents#preview-app'
+      let w = recent = window.open (url,id)
+      w.document.title = id
+      w.addEventListener('load', ()=> w.document.title = id, false)
+      setTimeout(()=> w.document.title = id, 100)
+      setTimeout(()=> w.document.title = id, 500)
+      setTimeout(()=> w.document.title = id, 1000)
+      setTimeout(()=> w.document.title = id, 2000)
+      setTimeout(()=> w.document.title = id, 3000)
+      setTimeout(()=> w.document.title = id, 5000)
+      setTimeout(()=> w.document.title = id, 7000)
+      setTimeout(()=> w.document.title = id, 11111)
+    }
   </script>
 
 </body>
