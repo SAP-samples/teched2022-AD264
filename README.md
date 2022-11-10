@@ -1,4 +1,4 @@
-# Verticalization, Customization, Composition with SAP Cloud Application Programming Model
+# AD264 - Verticalization, Customization, Composition with SAP Cloud Application Programming Model
 
 Welcome to the Hand-On Session at TechEd 2022. This repository provides both, 
 the session and exercises guide, as well as sample content used in the session.
