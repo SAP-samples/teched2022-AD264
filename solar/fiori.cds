@@ -2,7 +2,8 @@
 // Extensions for Fiori UIs
 //
 
-using { IncidentsService, sap.capire.incmgt.Incidents, EnumsCodeList } from './extensions';
+using { IncidentsService } from '../../app/fiori';
+using from './extensions';
 
 /** Add your ext fields to list pages */
 annotate IncidentsService.Incidents with @(

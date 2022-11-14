@@ -1,4 +1,4 @@
-using { sap.capire.incmgt.Incidents } from '@capire/incidents';
+using { sap.capire.incmgt.Incidents } from '../../db/schema';
 
 extend Incidents with {
 

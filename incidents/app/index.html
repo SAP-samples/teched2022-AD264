@@ -27,6 +27,7 @@
       let a = document.location
       let url = a.href.replace('://', '://' + id + '@') + '$fiori-preview/IncidentsService/Incidents#preview-app'
       let w = recent = window.open (url,id)
+      console.log (url)
       w.document.title = id
       w.addEventListener('load', ()=> w.document.title = id, false)
       setTimeout(()=> w.document.title = id, 100)
