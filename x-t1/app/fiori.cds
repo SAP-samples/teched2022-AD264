@@ -2,7 +2,7 @@
 // Extensions for Fiori UIs
 //
 
-using { IncidentsService, sap.capire.incmgt.Incidents, EnumsCodeList } from './extensions';
+using { IncidentsService } from './extensions';
 
 /** Add your ext fields to list pages */
 annotate IncidentsService.Incidents with @(
@@ -29,20 +29,3 @@ annotate IncidentsService.Incidents with @(
     ]
   }
 );
-
-
-/** Add Value List support for ext fields with enums */
-define entity sap.capire.incmgt.Incidents_ext_field2 : EnumsCodeList {};
-extend entity Incidents with {
-  ext_field2_: Association to sap.capire.incmgt.Incidents_ext_field2 on ext_field2_.value = ext_field2;
-  extend ext_field2 with @Common : {
-    Text: ext_field2_.label, TextArrangement : #TextOnly,
-    ValueListWithFixedValues,
-    ValueList: {
-      CollectionPath:'Incidents_ext_field2',
-      Parameters:[
-        { $Type: 'Common.ValueListParameterInOut', LocalDataProperty: ext_field2, ValueListProperty: 'value' },
-      ],
-    },
-  };
-}
