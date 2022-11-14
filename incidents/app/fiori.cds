@@ -9,11 +9,11 @@ annotate IncidentsService.Incidents with @(UI : {
   // For Lists of Incidents
   SelectionFields : [ urgency, status, repair.type ],
   LineItem : [
-    { Value: title },
-    { Value: customer.name, Label: 'Customer' },
-    { Value: urgency, Criticality : #Critical, CriticalityRepresentation : #WithoutIcon, },
-    { Value: status },
-    { Value: repair.type },
+    { Value: title, @HTML5.CssDefaults: {width:'14em'} },
+    { Value: customer.name, Label: 'Customer', @HTML5.CssDefaults: {width:'12em'} },
+    { Value: urgency, Criticality : #Critical, CriticalityRepresentation : #WithoutIcon, @HTML5.CssDefaults: {width:'7em'} },
+    { Value: status, @HTML5.CssDefaults: {width:'7em'} },
+    { Value: repair.type, @HTML5.CssDefaults: {width:'6em'} },
   ],
 
   // Information for the header area of Details Pages
