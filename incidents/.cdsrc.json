@@ -1,0 +1,17 @@
+{
+  "requires": {
+    "auth": {
+       "users": {
+          "alice": { "tenant": "t1", "roles": [ "cds.Subscriber", "admin" ] },
+          "bob":   { "tenant": "t1", "roles": [ "cds.ExtensionDeveloper" ] },
+          "carol": { "tenant": "t2", "roles": [ "cds.Subscriber", "admin" ] },
+          "erin":  { "tenant": "t3", "roles": [ "cds.Subscriber", "admin" ] },
+          "*": false
+       },
+       "tenants": {
+          "t2": { "features": [] },
+          "t3": { "features": ["solar"] }
+       }
+    }
+ }
+}
