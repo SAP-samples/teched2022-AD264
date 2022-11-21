@@ -1,3 +1,5 @@
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP-samples/teched2022-AD264)](https://api.reuse.software/info/github.com/SAP-samples/teched2022-AD264)
+
 # AD264 - Verticalization, Customization, Composition with SAP Cloud Application Programming Model
 
 Welcome to the Hand-On Session at TechEd 2022. This repository provides both, 
